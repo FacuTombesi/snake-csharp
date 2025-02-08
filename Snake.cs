@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 public class Snake
 {
-  public List<(int x, int y)> Body { get; private set; }
-  public (int x, int y) Direction { get; set; }
+  public List<(int x, int y)> Body { get; private set; };
+  public (int x, int y) Direction { get; set; };
 
   public Snake()
   {
