@@ -12,5 +12,15 @@ public class Snake
     Direction = (1, 0); // Moving right initially
   }
 
+  public Move()
+  {
+    var head = (Body[0].x + Direction.x, Body[0].y + Direction.y);
+    Body.Insert(0. head);
+    Body.RemoveAt(Body.Cound - 1); // Remove the tail unless snake eats food
+  }
 
+  public Grow()
+  {
+    Body.Add(Body[Body.Cound + 1]);
+  }
 }
